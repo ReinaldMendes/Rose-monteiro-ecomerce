@@ -1,0 +1,18 @@
+ARQUIVOS NECESSÁRIOS NA PASTA /public:
+=======================================
+
+SEO / Navegador:
+  favicon.ico             → ícone 32x32 (ICO)
+  favicon-16x16.png       → ícone 16x16 PNG
+  favicon-32x32.png       → ícone 32x32 PNG
+  apple-touch-icon.png    → ícone 180x180 PNG (iPhone)
+  icon-192.png            → ícone 192x192 PNG (Android)
+  icon-512.png            → ícone 512x512 PNG (Android splash)
+  og-image.jpg            → imagem Open Graph 1200x630px
+
+Opcional:
+  rose-monteiro.jpg       → foto da Rose para seção "Sobre"
+  logo.png                → logo para schema.org
+
+DICA: Use https://realfavicongenerator.net para gerar todos 
+os ícones a partir de uma única imagem.

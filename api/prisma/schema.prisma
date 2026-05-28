@@ -1,0 +1,204 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  bannerUrl   String?
+  order       Int       @default(0)
+  active      Boolean   @default(true)
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Collection {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  bannerUrl   String?
+  featured    Boolean   @default(false)
+  active      Boolean   @default(true)
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Product {
+  id             String        @id @default(cuid())
+  name           String
+  slug           String        @unique
+  sku            String        @unique
+  description    String?
+  story          String?
+  price          Float
+  priceWholesale Float?
+  comparePrice   Float?
+  stock          Int           @default(0)
+  stockStatus    StockStatus   @default(AVAILABLE)
+  weight         Float?
+  material       String?
+  finish         String?
+  dimensions     String?
+  featured       Boolean       @default(false)
+  active         Boolean       @default(true)
+  seoTitle       String?
+  seoDesc        String?
+  categoryId     String?
+  category       Category?     @relation(fields: [categoryId], references: [id])
+  collectionId   String?
+  collection     Collection?   @relation(fields: [collectionId], references: [id])
+  images         ProductImage[]
+  orderItems     OrderItem[]
+  reviews        Review[]
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@index([slug])
+  @@index([categoryId])
+  @@index([featured])
+  @@index([active])
+}
+
+enum StockStatus {
+  AVAILABLE
+  LOW_STOCK
+  OUT_OF_STOCK
+}
+
+model ProductImage {
+  id         String  @id @default(cuid())
+  url        String
+  publicId   String?
+  alt        String?
+  order      Int     @default(0)
+  productId  String
+  product    Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+model Customer {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  email     String?
+  address   String?
+  city      String?
+  state     String?
+  zip       String?
+  orders    Order[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id             String         @id @default(cuid())
+  orderNumber    String         @unique
+  status         OrderStatus    @default(PENDING)
+  paymentMethod  String?
+  deliveryMethod DeliveryMethod @default(PICKUP)
+  notes          String?
+  subtotal       Float
+  shippingCost   Float          @default(0)
+  total          Float
+  customerId     String
+  customer       Customer       @relation(fields: [customerId], references: [id])
+  items          OrderItem[]
+  timeline       OrderTimeline[]
+  abandonedAt    DateTime?
+  completedAt    DateTime?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+
+  @@index([status])
+  @@index([orderNumber])
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  IN_PRODUCTION
+  READY
+  SHIPPED
+  DELIVERED
+  CANCELLED
+  ABANDONED
+}
+
+enum DeliveryMethod {
+  PICKUP
+  DELIVERY
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  quantity  Int
+  unitPrice Float
+  total     Float
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+}
+
+model OrderTimeline {
+  id        String   @id @default(cuid())
+  status    String
+  note      String?
+  orderId   String
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  rating     Int
+  comment    String?
+  authorName String
+  approved   Boolean  @default(false)
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+}
+
+model Newsletter {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model AbandonedCart {
+  id            String   @id @default(cuid())
+  sessionId     String   @unique
+  customerPhone String?
+  customerName  String?
+  items         Json
+  total         Float
+  recovered     Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
