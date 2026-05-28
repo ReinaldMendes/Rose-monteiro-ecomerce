@@ -2,7 +2,7 @@
 import { MessageCircle } from 'lucide-react'
 
 export default function WhatsAppButton() {
-  const phone = process.env.NEXT_PUBLIC_WHATSAPP || '5542999999999'
+  const phone = process.env.NEXT_PUBLIC_WHATSAPP || '5542999210868'
   const url   = `https://wa.me/${phone}?text=${encodeURIComponent('Olá! Vim pelo site da Rose Monteiro Joias.')}`
   return (
     <a href={url} target="_blank" rel="noopener noreferrer"

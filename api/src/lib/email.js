@@ -65,7 +65,7 @@ const sendOrderConfirmation = async (order, customer) => {
       </div>
       <!-- Footer -->
       <div style="text-align:center;margin-top:32px;">
-        <p style="font-size:11px;color:#aaa;letter-spacing:0.1em;">ROSE MONTEIRO JOIAS · Curitiba, PR</p>
+        <p style="font-size:11px;color:#aaa;letter-spacing:0.1em;">ROSE MONTEIRO JOIAS · Ponta Grossa, PR</p>
         <p style="font-size:11px;color:#aaa;">Cerâmica artesanal com design autoral</p>
       </div>
     </div>

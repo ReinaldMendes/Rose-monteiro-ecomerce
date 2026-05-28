@@ -102,11 +102,11 @@ export default function ProductPage() {
   )
 
   const handleAdd = () => { addItem(product); toast.success('Adicionado ao carrinho!') }
-  const waLink    = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || '5542999999999'}?text=${encodeURIComponent(`Olá! Tenho uma dúvida sobre: ${product.name}`)}`
+  const waLink    = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || '5542999210868'}?text=${encodeURIComponent(`Olá! Tenho uma dúvida sobre: ${product.name}`)}`
 
   const accordions = [
     { key: 'cuidados', label: 'Cuidados com a peça',   content: 'Evite contato com água, perfume e produtos químicos. Guarde em local seco, de preferência na embalagem original. Limpe com pano seco e macio.' },
-    { key: 'entrega',  label: 'Entrega e prazos',       content: 'Enviamos para todo o Brasil via Correios (PAC e Sedex). Prazo de produção: até 3 dias úteis. Prazo de entrega: 5 a 12 dias úteis. Retirada em Curitiba/PR disponível.' },
+    { key: 'entrega',  label: 'Entrega e prazos',       content: 'Enviamos para todo o Brasil via Correios (PAC e Sedex). Prazo de produção: até 3 dias úteis. Prazo de entrega: 5 a 12 dias úteis. Retirada em Ponta Grossa/PR disponível.' },
     { key: 'trocas',   label: 'Trocas e devoluções',    content: 'Aceitamos trocas em até 7 dias após o recebimento. O produto deve estar sem sinais de uso. Entre em contato pelo WhatsApp.' },
   ]
 

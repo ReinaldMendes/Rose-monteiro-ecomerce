@@ -6,7 +6,7 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ceramicasrosemonte
 
 export const metadata: Metadata = {
   title: 'Nossa História — Rose Monteiro, Criadora de Joias em Cerâmica',
-  description: 'Conheça a história de Rose Monteiro, criadora de joias únicas em cerâmica artesanal. Cada peça é feita à mão, sem moldes, com intenção e afeto. Curitiba, PR.',
+  description: 'Conheça a história de Rose Monteiro, criadora de joias únicas em cerâmica artesanal. Cada peça é feita à mão, sem moldes, com intenção e afeto. Ponta Grossa, PR.',
   alternates: { canonical: `${BASE}/sobre` },
   openGraph: {
     title: 'Nossa História — Rose Monteiro Joias',
@@ -20,10 +20,10 @@ const personSchema = {
   '@type': 'Person',
   name: 'Rose Monteiro',
   jobTitle: 'Artesã e Criadora de Joias em Cerâmica',
-  description: 'Criadora de joias artesanais únicas em cerâmica com design autoral. Cada peça é feita à mão, sem moldes, em Curitiba, PR.',
+  description: 'Criadora de joias artesanais únicas em cerâmica com design autoral. Cada peça é feita à mão, sem moldes, em Ponta Grossa, PR.',
   url: `${BASE}/sobre`,
   worksFor: { '@type': 'Organization', name: 'Rose Monteiro Joias', url: BASE },
-  address: { '@type': 'PostalAddress', addressLocality: 'Curitiba', addressRegion: 'PR', addressCountry: 'BR' },
+  address: { '@type': 'PostalAddress', addressLocality: "Ponta Grossa"', addressRegion: 'PR', addressCountry: 'BR' },
   sameAs: ['https://www.instagram.com/rosemonteiro.joias'],
 }
 
@@ -46,7 +46,7 @@ export default function SobrePage() {
           <div className="bg-nude flex items-center justify-center min-h-[280px]">
             <div className="text-center">
               <div className="font-display text-[120px] font-semibold text-charcoal/8 leading-none" aria-hidden="true">RM</div>
-              <p className="font-display text-sm tracking-[0.22em] uppercase text-charcoal/40 italic">Ateliê · Curitiba, PR</p>
+              <p className="font-display text-sm tracking-[0.22em] uppercase text-charcoal/40 italic">Ateliê · Ponta Grossa, PR</p>
             </div>
           </div>
           <div className="bg-off-white px-10 md:px-16 py-16 flex flex-col justify-center">
@@ -58,7 +58,7 @@ export default function SobrePage() {
               A Rose Monteiro Joias nasceu da paixão pelo processo criativo artesanal. Cada peça é moldada à mão em argila branca, passando por queima em forno cerâmico e acabamento cuidadoso — um processo que pode levar de 7 a 15 dias por lote.
             </p>
             <p className="text-sm text-charcoal/65 leading-[1.9] font-light">
-              Sediada em Curitiba/PR, a marca existe para criar conexões simbólicas por meio de peças únicas que carregam natureza, tempo, intenção e afeto. Nenhuma peça é exatamente igual à outra — essa é a beleza do feito à mão.
+              Sediada em Ponta Grossa/PR, a marca existe para criar conexões simbólicas por meio de peças únicas que carregam natureza, tempo, intenção e afeto. Nenhuma peça é exatamente igual à outra — essa é a beleza do feito à mão.
             </p>
           </div>
         </div>

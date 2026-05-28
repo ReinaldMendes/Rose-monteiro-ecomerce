@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { MessageCircle, FileText, Package, Shield } from 'lucide-react'
 export const metadata = { title: 'Atacado | Rose Monteiro Joias' }
 export default function AtacadoPage() {
-  const phone = process.env.NEXT_PUBLIC_WHATSAPP || '5542999999999'
+  const phone = process.env.NEXT_PUBLIC_WHATSAPP || '5542999210868'
   const waLink = `https://wa.me/${phone}?text=${encodeURIComponent('Olá! Tenho interesse no programa de atacado da Rose Monteiro Joias.')}`
   return (
     <div>

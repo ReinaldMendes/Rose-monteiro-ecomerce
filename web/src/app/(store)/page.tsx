@@ -12,7 +12,7 @@ import FAQ               from '@/components/home/FAQ'
 const SITE_URL  = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ceramicasrosemonteiro.com.br'
 
 export const metadata: Metadata = {
-  title: 'Rose Monteiro Joias — Joias Artesanais em Cerâmica | Curitiba',
+  title: 'Rose Monteiro Joias — Joias Artesanais em Cerâmica | Ponta Grossa',
   description: 'Descubra joias únicas em cerâmica artesanal. Brincos, colares, anéis e pulseiras feitos à mão, sem moldes, com acabamento em ouro e ródio. Envio para todo o Brasil.',
   alternates: { canonical: SITE_URL },
   openGraph: {

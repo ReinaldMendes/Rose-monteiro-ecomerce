@@ -1,5 +1,5 @@
 export default function TickerBanner() {
-  const items = ['Cerâmica artesanal','Feito à mão','Design autoral','Curitiba, PR','Frete para todo o Brasil','Peças únicas']
+  const items = ['Cerâmica artesanal','Feito à mão','Design autoral','Ponta Grossa, PR','Frete para todo o Brasil','Peças únicas']
   const doubled = [...items, ...items]
   return (
     <div className="bg-gold py-3 overflow-hidden">

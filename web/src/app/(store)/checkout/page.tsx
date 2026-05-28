@@ -70,7 +70,7 @@ export default function CheckoutPage() {
             <div className="bg-white p-6 border border-nude/70">
               <h2 className="text-[11px] tracking-[0.2em] uppercase text-gold mb-4 font-body">Entrega</h2>
               <div className="space-y-3 mb-4">
-                {[['PICKUP','Retirada no ateliê — Curitiba/PR'],['DELIVERY','Entrega no meu endereço']].map(([v, l]) => (
+                {[['PICKUP','Retirada no ateliê — Ponta Grossa/PR'],['DELIVERY','Entrega no meu endereço']].map(([v, l]) => (
                   <label key={v} className={`flex items-center gap-3 p-4 border cursor-pointer transition-colors ${delivery === v ? 'border-charcoal bg-charcoal/3' : 'border-nude hover:border-charcoal/30'}`}>
                     <input type="radio" name="delivery" value={v} checked={delivery === v as any}
                       onChange={() => setDelivery(v as 'PICKUP' | 'DELIVERY')} className="accent-charcoal" />

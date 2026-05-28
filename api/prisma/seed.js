@@ -9,11 +9,11 @@ async function main() {
   // Admin user
   const hash = await bcrypt.hash('admin123', 10)
   const admin = await prisma.user.upsert({
-    where: { email: 'admin@rosemonteiro.com.br' },
+    where: { email: 'foggiattorm@hotmail.com' },
     update: {},
     create: {
       name: 'Rose Monteiro',
-      email: 'admin@rosemonteiro.com.br',
+      email: 'foggiattorm@hotmail.com',
       password: hash,
       role: 'SUPER_ADMIN',
     },
@@ -137,7 +137,7 @@ async function main() {
   console.log('✅ Produtos criados')
 
   console.log('\n🎉 Seed concluído!')
-  console.log('📧 Login: admin@rosemonteiro.com.br')
+  console.log('📧 Login: foggiattorm@hotmail.com')
   console.log('🔑 Senha: admin123')
   console.log('⚠️  Troque a senha após o primeiro login!')
 }

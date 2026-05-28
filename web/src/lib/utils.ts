@@ -12,7 +12,7 @@ export const whatsappLink = (phone: string, message: string) =>
   `https://wa.me/${phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`
 
 export const orderWhatsapp = (orderNumber: string) => {
-  const phone = process.env.NEXT_PUBLIC_WHATSAPP || '5542999999999'
+  const phone = process.env.NEXT_PUBLIC_WHATSAPP || '5542999210868'
   const msg   = `Olá! Acabei de fazer o pedido ${orderNumber} no site da Rose Monteiro Joias. Gostaria de confirmar os detalhes.`
   return whatsappLink(phone, msg)
 }

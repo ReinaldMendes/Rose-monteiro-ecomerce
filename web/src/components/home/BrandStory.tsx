@@ -7,7 +7,7 @@ export default function BrandStory() {
       <div className="bg-charcoal relative overflow-hidden flex items-center justify-center min-h-[320px]">
         <div className="absolute inset-0" style={{ backgroundImage: 'repeating-linear-gradient(45deg,rgba(155,135,51,0.05) 0,rgba(155,135,51,0.05) 1px,transparent 0,transparent 50%)', backgroundSize: '24px 24px' }} />
         <div className="font-display text-[200px] font-semibold text-white opacity-[0.04] leading-none select-none absolute">RM</div>
-        <p className="relative z-10 text-[10px] tracking-[0.32em] uppercase text-gold text-center">Desde 2018 · Curitiba / PR</p>
+        <p className="relative z-10 text-[10px] tracking-[0.32em] uppercase text-gold text-center">Desde 2018 · Ponta Grossa / PR</p>
       </div>
       <div className="bg-nude px-12 md:px-20 py-20 flex flex-col justify-center">
         <p className="font-script text-terra text-base mb-4">A Criadora</p>

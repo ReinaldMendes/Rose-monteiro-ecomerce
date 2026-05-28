@@ -126,7 +126,7 @@ router.post('/generate', authenticate, requireAdmin, async (req, res) => {
         <div class="cover-line"></div>
         <div class="cover-desc">Cerâmica artesanal com design autoral.<br>Peças únicas que carregam natureza, tempo, intenção e afeto.</div>
       </div>
-      <div class="cover-year">${new Date().getFullYear()} · Curitiba, PR</div>
+      <div class="cover-year">${new Date().getFullYear()} · Ponta Grossa, PR</div>
     </div>
 
     <div class="products-section">
@@ -140,8 +140,8 @@ router.post('/generate', authenticate, requireAdmin, async (req, res) => {
     <div class="catalog-footer">
       <div class="brand">ROSE MONTEIRO JOIAS</div>
       <div class="contact">
-        Curitiba, PR · ceramicasrosemonteiro.com.br<br>
-        WhatsApp: (42) 99156-2593 · contato@rosemonteiro.com.br<br>
+        Ponta Grossa, PR · ceramicasrosemonteiro.com.br<br>
+        WhatsApp: (42) 9921-0868 · foggiattorm@hotmail.com<br>
         Pedido mínimo e condições sob consulta.
       </div>
     </div>

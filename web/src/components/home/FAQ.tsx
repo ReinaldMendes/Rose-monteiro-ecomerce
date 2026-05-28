@@ -6,7 +6,7 @@ const faqs = [
   { q: 'Como é feito o processo de produção?', a: 'Cada peça é modelada à mão com argila de alta qualidade, passando por secagem natural, queima em forno cerâmico e acabamento artesanal. O processo leva de 7 a 15 dias.' },
   { q: 'As peças são resistentes?', a: 'Sim! A cerâmica após a queima torna-se muito resistente. Recomendamos evitar contato com água e produtos químicos para preservar o acabamento.' },
   { q: 'Faço pedidos personalizados?', a: 'Sim! Entre em contato pelo WhatsApp para conversarmos sobre personalizações de cor, tamanho e formato.' },
-  { q: 'Qual o prazo de entrega?', a: 'Até 3 dias úteis de produção + prazo dos Correios (5 a 12 dias úteis). Retirada em Curitiba/PR disponível.' },
+  { q: 'Qual o prazo de entrega?', a: 'Até 3 dias úteis de produção + prazo dos Correios (5 a 12 dias úteis). Retirada em Ponta Grossa/PR disponível.' },
   { q: 'Posso trocar meu pedido?', a: 'Aceitamos trocas em até 7 dias após o recebimento, desde que sem sinais de uso. Entre em contato pelo WhatsApp.' },
 ]
 

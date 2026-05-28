@@ -5,7 +5,7 @@ import { Toaster } from 'sonner'
 
 const SITE_URL  = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ceramicasrosemonteiro.com.br'
 const SITE_NAME = 'Rose Monteiro Joias'
-const SITE_DESC = 'Joias artesanais em cerâmica com design autoral. Peças únicas feitas à mão, sem moldes, que carregam natureza, tempo, intenção e afeto. Curitiba, PR.'
+const SITE_DESC = 'Joias artesanais em cerâmica com design autoral. Peças únicas feitas à mão, sem moldes, que carregam natureza, tempo, intenção e afeto. Ponta Grossa, PR.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'Rose Monteiro', 'joias feitas à mão', 'brincos cerâmica',
     'colares cerâmica', 'anéis cerâmica', 'joias exclusivas',
     'joias autorais', 'joias sustentáveis', 'Curitiba', 'Paraná',
-    'joias de cerâmica Curitiba', 'presente exclusivo feminino',
+    'joias de cerâmica Ponta Grossa', 'joias Ponta Grossa', 'joias artesanais Ponta Grossa', 'presente exclusivo feminino',
     'brinco artesanal', 'colar artesanal', 'joia única',
   ],
   authors: [{ name: 'Rose Monteiro', url: SITE_URL }],
@@ -70,11 +70,11 @@ const orgSchema = {
       url: SITE_URL,
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png` },
       description: SITE_DESC,
-      address: { '@type': 'PostalAddress', addressLocality: 'Curitiba', addressRegion: 'PR', addressCountry: 'BR' },
-      contactPoint: { '@type': 'ContactPoint', telephone: '+55-42-99156-2593', contactType: 'customer service', availableLanguage: 'Portuguese' },
+      address: { '@type': 'PostalAddress', addressLocality: "Ponta Grossa"', addressRegion: 'PR', addressCountry: 'BR' },
+      contactPoint: { '@type': 'ContactPoint', telephone: '+55-42-99921-0868', contactType: 'customer service', availableLanguage: 'Portuguese' },
       sameAs: [
         'https://www.instagram.com/rosemonteiro.joias',
-        `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || '5542999999999'}`,
+        `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || '5542999210868'}`,
       ],
     },
     {
@@ -100,7 +100,7 @@ const orgSchema = {
       currenciesAccepted: 'BRL',
       paymentAccepted: 'Pix, Cartão de crédito, Cartão de débito',
       priceRange: 'R$150 - R$800',
-      address: { '@type': 'PostalAddress', addressLocality: 'Curitiba', addressRegion: 'PR', addressCountry: 'BR' },
+      address: { '@type': 'PostalAddress', addressLocality: "Ponta Grossa"', addressRegion: 'PR', addressCountry: 'BR' },
       openingHoursSpecification: [
         { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '18:00' },
         { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday'], opens: '10:00', closes: '14:00' },
@@ -116,7 +116,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#383D3B" />
         <meta name="format-detection" content="telephone=yes" />
         <meta name="geo.region" content="BR-PR" />
-        <meta name="geo.placename" content="Curitiba" />
+        <meta name="geo.placename" content="Ponta Grossa" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <Script

@@ -32,7 +32,7 @@ Após o deploy, copie a URL pública do Railway (ex: `https://rose-monteiro-api.
 3. Configure as variáveis de ambiente:
    ```
    NEXT_PUBLIC_API_URL=https://sua-api.up.railway.app
-   NEXT_PUBLIC_WHATSAPP=5542999999999
+   NEXT_PUBLIC_WHATSAPP=5542999210868
    NEXT_PUBLIC_SITE_URL=https://www.ceramicasrosemonteiro.com.br
    ```
 4. Deploy automático!
@@ -43,7 +43,7 @@ Após o deploy, copie a URL pública do Railway (ex: `https://rose-monteiro-api.
 
 Após o seed do banco:
 
-- **E-mail:** admin@rosemonteiro.com.br  
+- **E-mail:** foggiattorm@hotmail.com  
 - **Senha:** admin123  
 - **URL:** `https://seu-site.com/admin`
 
@@ -71,7 +71,7 @@ SMTP_PASS=sua-senha-de-app
 EMAIL_FROM=Rose Monteiro Joias <noreply@rosemonteiro.com.br>
 EMAIL_ADMIN=contato@rosemonteiro.com.br
 
-WHATSAPP_NUMBER=5542999999999
+WHATSAPP_NUMBER=5542999210868
 FRONTEND_URL=https://www.ceramicasrosemonteiro.com.br
 PORT=3001
 NODE_ENV=production
@@ -81,7 +81,7 @@ NODE_ENV=production
 
 ```env
 NEXT_PUBLIC_API_URL=https://sua-api.up.railway.app
-NEXT_PUBLIC_WHATSAPP=5542999999999
+NEXT_PUBLIC_WHATSAPP=5542999210868
 NEXT_PUBLIC_SITE_URL=https://www.ceramicasrosemonteiro.com.br
 ```
 
