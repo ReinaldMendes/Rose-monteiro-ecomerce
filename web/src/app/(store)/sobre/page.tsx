@@ -23,7 +23,7 @@ const personSchema = {
   description: 'Criadora de joias artesanais únicas em cerâmica com design autoral. Cada peça é feita à mão, sem moldes, em Ponta Grossa, PR.',
   url: `${BASE}/sobre`,
   worksFor: { '@type': 'Organization', name: 'Rose Monteiro Joias', url: BASE },
-  address: { '@type': 'PostalAddress', addressLocality: "Ponta Grossa"', addressRegion: 'PR', addressCountry: 'BR' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Ponta Grossa', addressRegion: 'PR', addressCountry: 'BR' },
   sameAs: ['https://www.instagram.com/rosemonteiro.joias'],
 }
 

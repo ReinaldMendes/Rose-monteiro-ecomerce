@@ -70,7 +70,7 @@ const orgSchema = {
       url: SITE_URL,
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png` },
       description: SITE_DESC,
-      address: { '@type': 'PostalAddress', addressLocality: "Ponta Grossa"', addressRegion: 'PR', addressCountry: 'BR' },
+      address: { '@type': 'PostalAddress', addressLocality: 'Ponta Grossa', addressRegion: 'PR', addressCountry: 'BR' },
       contactPoint: { '@type': 'ContactPoint', telephone: '+55-42-99921-0868', contactType: 'customer service', availableLanguage: 'Portuguese' },
       sameAs: [
         'https://www.instagram.com/rosemonteiro.joias',
@@ -100,7 +100,7 @@ const orgSchema = {
       currenciesAccepted: 'BRL',
       paymentAccepted: 'Pix, Cartão de crédito, Cartão de débito',
       priceRange: 'R$150 - R$800',
-      address: { '@type': 'PostalAddress', addressLocality: "Ponta Grossa"', addressRegion: 'PR', addressCountry: 'BR' },
+      address: { '@type': 'PostalAddress', addressLocality: 'Ponta Grossa', addressRegion: 'PR', addressCountry: 'BR' },
       openingHoursSpecification: [
         { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '18:00' },
         { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday'], opens: '10:00', closes: '14:00' },
